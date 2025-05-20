@@ -1,8 +1,8 @@
-import gradio as gr
+# import gradio as gr
 import requests
 import uuid
 import json
-from typing import List, Tuple, Dict
+# from typing import List, Tuple, Dict
 
 # 语言映射
 LANGUAGE_MAP = {
