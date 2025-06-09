@@ -6,3 +6,4 @@ vector_databases
 knowledgeBase
 tmp*.*
 *.json
+apiconfig.py
