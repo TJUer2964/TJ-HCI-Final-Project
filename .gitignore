@@ -1,0 +1,8 @@
+__pycache__
+.test
+.gradio
+uploads
+vector_databases
+knowledgeBase
+tmp*.*
+*.json
