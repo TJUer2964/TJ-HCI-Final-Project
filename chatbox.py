@@ -293,7 +293,7 @@ def call_llm_api(user_input, history, model, active_role_name, current_lang, use
             print(f"正在使用知识库 '{selected_kb_name}' 进行搜索...")
             # Assuming search_torch_index is available and works as expected
             try:
-                kb_results = vector_db_utils.search_torch_index(selected_kb_name, user_input, top_n=5)
+                kb_results = vector_db_utils.search_torch_index(selected_kb_name, user_input, k=5)
                 if kb_results:
                     kb_context = "--- 知识库检索结果 ---\n"
                     for i, chunk in enumerate(kb_results, 1):

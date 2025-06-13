@@ -61,8 +61,8 @@ def embed_texts_and_store(kb_name, chunk_file_path):
     if not new_texts_list:
         return f"未能从 {chunk_file_path} 加载任何文本块。", None
 
-    vector_path = os.path.join(VECTOR_DB_ROOT, kb_name, f"{kb_name}.pt")
-    texts_path = os.path.join(VECTOR_DB_ROOT, kb_name,f"{kb_name}.texts")
+    vector_path = os.path.join(VECTOR_DB_ROOT, f"{kb_name}.pt")
+    texts_path = os.path.join(VECTOR_DB_ROOT, f"{kb_name}.texts")
 
     try:
         print(f"对 {kb_name} 的 {len(new_texts_list)} 个新文本块（来自 {chunk_file_path}）生成向量嵌入...")

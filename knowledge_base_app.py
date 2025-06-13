@@ -1,4 +1,5 @@
 import gradio as gr
+import os
 from knowledge_base_utils import (
     list_knowledge_bases,
     create_knowledge_base,

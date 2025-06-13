@@ -137,13 +137,11 @@ with gr.Blocks(title="LLM Chat", theme=gr.themes.Soft(primary_hue=gr.themes.colo
     # Event handling for mutual exclusivity of search_checkbox and use_kb_checkbox
     def toggle_search(use_kb_checked, current_lang):
         if use_kb_checked:
-            gr.Info(LANGUAGE_MAP[current_lang]["kb_and_search_warning"])
             return gr.Checkbox.update(value=False, interactive=False)
         return gr.Checkbox.update(interactive=True)
 
     def toggle_kb_usage(search_checked, current_lang):
         if search_checked:
-            gr.Info(LANGUAGE_MAP[current_lang]["kb_and_search_warning"])
             return gr.Checkbox.update(value=False, interactive=False)
         return gr.Checkbox.update(interactive=True)
 
